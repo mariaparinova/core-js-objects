@@ -603,11 +603,11 @@ describe('objects-tasks', () => {
 
       [
         () => builder.id('id').element('div'),
-        // () => builder.class('main').id('id'),
-        // () => builder.attr('href').class('download-link'),
-        // () => builder.pseudoClass('hover').attr('title'),
-        // () => builder.pseudoElement('after').pseudoClass('valid'),
-        // () => builder.pseudoElement('after').id('id'),
+        () => builder.class('main').id('id'),
+        () => builder.attr('href').class('download-link'),
+        () => builder.pseudoClass('hover').attr('title'),
+        () => builder.pseudoElement('after').pseudoClass('valid'),
+        () => builder.pseudoElement('after').id('id'),
       ].forEach((fn) => {
         assert.throws(
           fn,
